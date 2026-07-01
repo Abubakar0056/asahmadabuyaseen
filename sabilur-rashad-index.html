@@ -18,6 +18,7 @@
             <ul class="nav-menu" id="navMenu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li class="nav-item"><a href="#mission-vision" class="nav-link">Mission & Vision</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -77,6 +78,53 @@
             </div>
         </div>
     </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <div class="header-underline"></div>
+                <p class="section-subtitle">Explore moments from our school community</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> All
+                </button>
+                <button class="filter-btn" data-filter="classes">
+                    <i class="fas fa-chalkboard-user"></i> Classes
+                </button>
+                <button class="filter-btn" data-filter="events">
+                    <i class="fas fa-calendar-check"></i> Events
+                </button>
+                <button class="filter-btn" data-filter="activities">
+                    <i class="fas fa-running"></i> Activities
+                </button>
+                <button class="filter-btn" data-filter="facilities">
+                    <i class="fas fa-building"></i> Facilities
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">\n        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <button class="lightbox-nav prev-lightbox">&#10094;</button>
+            <img id="lightboxImage" src="" alt="Gallery Image" class="lightbox-image">
+            <button class="lightbox-nav next-lightbox">&#10095;</button>
+            <div class="lightbox-info">
+                <p id="lightboxCaption"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Mission & Vision Section -->
     <section id="mission-vision" class="mission-vision">
@@ -211,6 +259,7 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#mission-vision">Mission & Vision</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
